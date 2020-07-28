@@ -9,7 +9,11 @@ Agradecimentos especiais a:
 Gildácio Souza Gonçalves (professor)
 
 Pablo Henrique Candido dos Santos
+
 Igor Yuri da Silva
+
 Patrícia da Silva
+
 Vitor Ribeiro da Cruz
+
 Natanael Mendes Pereira
