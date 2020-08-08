@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/app_menu">
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/begin"
+            android:icon="@drawable/ic_home"
+            android:title="@string/begin" />
+
+        <item
+            android:id="@+id/cash"
+            android:icon="@drawable/ic_attach_money"
+            android:title="@string/leftover" />
+
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/ic_account_balance"
+            android:title="@string/accounts" />
+
+        <item
+            android:id="@+id/wish_list"
+            android:icon="@drawable/ic_star"
+            android:title="@string/wish_list" />
+
+        <item
+            android:id="@+id/annotations"
+            android:icon="@drawable/ic_note_add"
+            android:title="@string/annotations" />
+
+
+    </group>
+
+    <item android:title="@string/options">
+        <menu>
+            <item
+                android:id="@+id/option_profile"
+                android:icon="@drawable/ic_account_circle"
+                android:title="@string/option_profile" />
+
+            <item
+                android:id="@+id/option_other"
+                android:icon="@drawable/ic_comment"
+                android:title="@string/option_other" />
+        </menu>
+    </item>
+
+</menu>

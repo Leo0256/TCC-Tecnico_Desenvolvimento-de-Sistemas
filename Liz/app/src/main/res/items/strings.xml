@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Liz</string>
+    <string name="changeImage">LogoTransition</string>
+
+    <!-- Forgot Password strings -->
+    <string name="messageRecover">Informe seu e-mail para receber uma menssagem que confirmará a sua troca de senha.</string>
+
+    <!-- Menu_Resource strings -->
+    <string name="begin">Início</string>
+    <string name="leftover">Saldo</string>
+    <string name="accounts">Contas</string>
+    <string name="wish_list">Lista de Desejos</string>
+    <string name="annotations">Anotações</string>
+
+    <string name="options">Configurações</string>
+    <string name="option_profile">Meu Perfil</string>
+    <string name="option_preference">Preferências</string>
+    <string name="option_other">Outros</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

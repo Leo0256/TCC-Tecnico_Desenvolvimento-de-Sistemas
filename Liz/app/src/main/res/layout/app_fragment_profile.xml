@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".app.Profile">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_account_circle" />
+
+    <ImageView
+        android:id="@+id/profile_image_change"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+
+        android:layout_below="@id/profile_image"
+        android:layout_marginStart="-28dp"
+        android:layout_marginTop="-28dp"
+        android:layout_toEndOf="@id/profile_image"
+
+        android:background="@mipmap/ic_change_image" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColorHint="@color/dark_blue"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:padding="13dp"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColorHint="@color/dark_blue"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="13dp"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gen"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="15dp"
+        android:textColorHint="@color/dark_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+
+            android:hint="Gênero"
+            android:inputType="text"
+            android:padding="13dp"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/email"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@id/gen"
+        android:background="@drawable/bg_app_btn"
+        android:drawableEnd="@drawable/ic_date_range_black"
+        android:gravity="start|center_vertical"
+        android:paddingStart="13sp"
+
+
+        android:paddingEnd="10sp"
+        android:text="Nascimento"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gen"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:textColorHint="@color/dark_blue"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_app_btn"
+        android:foreground="@drawable/ic_edit_black"
+        android:foregroundGravity="center" />
+
+
+    <!--
+
+    <View
+        android:id="@+id/underline_name"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        tools:visibility="invisible"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/bg_app_gradient_horizon"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/app_background"
+
+        android:enabled="false"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_blue"
+
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <View
+        android:id="@+id/underline_email"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/bg_app_gradient_horizon"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_background"
+        android:drawableRight="@android:drawable/ic_menu_view"
+        android:enabled="false"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_blue"
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/underline_pass"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="58dp"
+
+        android:background="@drawable/bg_app_gradient_horizon"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        tools:visibility="visible"/>
+
+
+    <EditText
+        android:id="@+id/gen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="2.5dp"
+
+        android:background="@color/app_background"
+        android:enabled="false"
+        android:hint="Gênero"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/dark_blue"
+        app:layout_constraintEnd_toStartOf="@id/date"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <View
+        android:id="@+id/underline_gen"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginEnd="2.5dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/bg_app_gradient_horizon"
+        app:layout_constraintEnd_toStartOf="@id/underline_date"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/gen" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2.5dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@color/app_background"
+        android:enabled="false"
+        android:hint="Nascimento"
+        android:inputType="datetime"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_blue"
+
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/gen"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <View
+        android:id="@+id/underline_date"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/bg_app_gradient_horizon"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/underline_gen"
+        app:layout_constraintTop_toBottomOf="@id/gen" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="Editar"
+        android:textAllCaps="false"
+
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+-->
+
+</RelativeLayout>

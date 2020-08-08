@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Liz</string>
+    <string name="changeImage">LogoTransition</string>
+    <string name="server_address">http://127.0.0.0/</string>
+
+    <!-- Forgot Password strings -->
+    <string name="messageRecover">
+        Informe seu e-mail para receber uma menssagem que confirmará a sua troca de senha.
+    </string>
+
+    <!-- Menu_Resource strings -->
+    <string name="begin">Início</string>
+    <string name="leftover">Saldo</string>
+    <string name="accounts">Contas</string>
+    <string name="wish_list">Lista de Desejos</string>
+    <string name="annotations">Anotações</string>
+
+    <string name="options">Configurações</string>
+    <string name="option_profile">Meu Perfil</string>
+    <string name="option_other">Outros</string>
+
+    <!-- Outras string -->
+
+    <string name="app_description">
+        O app Liz - Auxiliador da Gestão Financeira foi desenvolvido como
+        um Trabalho de Conclusão de Curso para a ETEC (Escola Técnica Estadual) Ilza Nascimento Pintus,
+        São José dos Campos, SP (2019 - 2020).
+    </string>
+
+    <string name="app_devs">
+        Patricia da Silva
+        \nLeonardo Gustavo Ribeiro
+        \nVitor Ribeiro da Cruz
+        \nNatanael Mendes Pereira
+        \nPablo Henrique Candido dos Santos
+        \nIgor Yuri da Silva
+    </string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>
